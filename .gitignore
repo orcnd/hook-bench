@@ -1,0 +1,5 @@
+__pycache__/
+.DS_Store
+*.blend1
+designs/_scratch/
+.venv/

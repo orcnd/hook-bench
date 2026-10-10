@@ -1,0 +1,25 @@
+{
+  "file": "output/claude-sonnet-5.5/hookv1.stl",
+  "hotspot_xz": [
+    -3.2702229589484393,
+    0.4772738297557424
+  ],
+  "sigma1_per_N_mpa": 1.2685295918618746,
+  "pred_fail_N": 39.415714320556674,
+  "pred_fail_kg": 4.017911755408427,
+  "pin_drop_at_fail_mm": 1.309080223139159,
+  "pivot_xz": [
+    0,
+    53.0
+  ],
+  "contact_xz": [
+    0,
+    -3.0
+  ],
+  "elements": 14401,
+  "material": {
+    "E_mpa": 3000,
+    "nu": 0.35,
+    "sigma_t_mpa": 50
+  }
+}

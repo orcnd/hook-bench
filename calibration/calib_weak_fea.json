@@ -1,0 +1,25 @@
+{
+  "file": "calibration/calib_weak.stl",
+  "hotspot_xz": [
+    -8.993395482760913,
+    5.927358612221803
+  ],
+  "sigma1_per_N_mpa": 4.616739668627194,
+  "pred_fail_N": 10.830153655787072,
+  "pred_fail_kg": 1.1039911983473059,
+  "pin_drop_at_fail_mm": 2.4843643658859116,
+  "pivot_xz": [
+    0,
+    53.0
+  ],
+  "contact_xz": [
+    0,
+    -3.0
+  ],
+  "elements": 14565,
+  "material": {
+    "E_mpa": 3000,
+    "nu": 0.35,
+    "sigma_t_mpa": 50
+  }
+}

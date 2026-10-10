@@ -1,0 +1,25 @@
+{
+  "file": "calibration/calib_strong.stl",
+  "hotspot_xz": [
+    -3.3093189128495117,
+    0.23609114285405702
+  ],
+  "sigma1_per_N_mpa": 1.5222985736586778,
+  "pred_fail_N": 32.84506788956024,
+  "pred_fail_kg": 3.3481210896595557,
+  "pin_drop_at_fail_mm": 0.9455735439890328,
+  "pivot_xz": [
+    0,
+    53.0
+  ],
+  "contact_xz": [
+    0,
+    -3.0
+  ],
+  "elements": 14564,
+  "material": {
+    "E_mpa": 3000,
+    "nu": 0.35,
+    "sigma_t_mpa": 50
+  }
+}

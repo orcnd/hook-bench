@@ -1,0 +1,9 @@
+# Material model for analyze.py (2D plane-stress FEA).
+# PLA printed flat (layers parallel to the XZ profile), 100% infill, so the load runs
+# along the layers, not across them.
+E_mpa: 3000          # Young's modulus; printed PLA is typically 2500-3500 MPa
+nu: 0.35             # Poisson's ratio
+sigma_t_mpa: 50      # tensile strength used for the failure prediction (max principal stress).
+                     # Starting guess from literature (45-60 MPa). After the calibration hooks
+                     # are tested, replace it with the back-calculated value that analyze.py
+                     # prints when you pass --measured-kg.

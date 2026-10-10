@@ -1,0 +1,5 @@
+model,session,specimen,valid,revisions,mass_g,fea_pred_kg,model_pred_N,measured_kg,break_location,notes
+claude-opus-5.5,1,,yes,0,,3.90,45,,,"FEA break at bowl left inner wall (-3.1,-0.4); est. mass 1.58 g"
+claude-sonnet-5.5,1,,yes,1,,4.02,55,,,"rev1 invalid: 17 bodies / non-manifold after exact boolean; FEA break at (-3.3,0.5); est. mass 1.52 g; short lip (-40 deg), pin slip risk"
+calib_weak,ref,,yes,,,1.10,,,,"FEA break at (-9.0,5.9)"
+calib_strong,ref,,yes,,,3.35,,,,"FEA break at (-3.3,0.2)"

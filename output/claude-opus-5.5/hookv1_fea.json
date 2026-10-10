@@ -1,0 +1,25 @@
+{
+  "file": "output/claude-opus-5.5/hookv1.stl",
+  "hotspot_xz": [
+    -3.0944146646197326,
+    -0.4242276508037105
+  ],
+  "sigma1_per_N_mpa": 1.308539093950308,
+  "pred_fail_N": 38.21055116439552,
+  "pred_fail_kg": 3.8950612807742626,
+  "pin_drop_at_fail_mm": 0.4084319633756749,
+  "pivot_xz": [
+    0,
+    53.0
+  ],
+  "contact_xz": [
+    0,
+    -3.0
+  ],
+  "elements": 14991,
+  "material": {
+    "E_mpa": 3000,
+    "nu": 0.35,
+    "sigma_t_mpa": 50
+  }
+}

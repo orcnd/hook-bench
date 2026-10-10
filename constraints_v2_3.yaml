@@ -1,0 +1,41 @@
+# hook-bench constraints v2.3
+# Coordinates: profile in XZ plane, Z = pull direction (up), part extruded along Y.
+# Units: mm.
+version: "2.3"
+
+thickness_y: 5.0          # part spans Y = 0 .. 5.0
+thickness_tol: 0.01
+
+keep_in: {x: [-20, 20], z: [-12, 62]}
+
+volume_mm3: [1150, 1350]  # profile area 230-270 mm^2 at 5.0 mm
+surface_area_mm2_max: 1850
+max_triangles: 50000
+
+pin:                      # bottom connection (bottle side)
+  center: [0, 0]
+  dia: 6.0
+  contact: [0, -3.0]      # P1: pin rests on the hook from above
+  contact_tol: 0.3
+  keep_out_dia: 5.8       # no material inside this circle
+
+insertion:                # a Ø6.5 disk must reach the seat from outside the keep-in box
+  disk_dia: 6.5           # (any path in the XZ plane)
+  seat_tol: 0.6           # ... to within this distance of the pin center
+
+eye:                      # top connection (pull side) - the only hole allowed
+  center: [0, 50]
+  hole_dia: 6.0           # for an M5 steel screw
+  hole_tol: 0.1           # on diameter
+  rod_dia: 5.0
+  contact: [0, 53.0]      # P2: screw pulls on top edge of the hole
+  ring_min_width: 3.0     # solid ring r = 3..6 mm required, so the top never breaks
+  zone_radius: 8.0        # band.max_inscribed does not apply within this radius of the eye center
+
+band:
+  max_inscribed_dia: 2.3  # no circle larger than this fits in the profile (outside the eye zone)
+  min_width: 1.6          # no section narrower than this
+  min_inner_radius: 0.5   # concave corners must be rounded at least this much
+
+holes_allowed: 1
+pla_density_g_cm3: 1.24
